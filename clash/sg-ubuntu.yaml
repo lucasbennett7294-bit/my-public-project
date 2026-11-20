@@ -19,9 +19,6 @@ dns:
   fallback:
     - 8.8.8.8
     - 1.1.1.1
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
 
 proxies:
   - name: sg-ubuntu
@@ -79,5 +76,4 @@ rules:
   - RULE-SET,direct,DIRECT
   - RULE-SET,proxy,PROXY
   - RULE-SET,cncidr,DIRECT
-  - GEOIP,CN,DIRECT
   - MATCH,PROXY
