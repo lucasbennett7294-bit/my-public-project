@@ -24,7 +24,7 @@ proxies:
   - name: sg-ubuntu
     type: vless
     server: sg-sgp03.altare.global
-    port: 25492
+    port: 25900
     uuid: 319b808c-c47a-4817-8f9e-3c91196e0e4a
     udp: true
 
