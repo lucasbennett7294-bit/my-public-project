@@ -22,9 +22,11 @@ dns:
 
 proxies:
   - name: sg-ubuntu
-    type: socks5
-    server: 127.0.0.1
-    port: 1080
+    type: vless
+    server: sg-sgp03.altare.global
+    port: 25492
+    uuid: 319b808c-c47a-4817-8f9e-3c91196e0e4a
+    udp: true
 
 proxy-groups:
   - name: PROXY
