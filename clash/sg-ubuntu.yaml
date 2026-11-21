@@ -1,5 +1,5 @@
 # 统一订阅配置（手机 + 电脑共用）
-# 节点：sg-ubuntu（Altare）+ 野草云（香港 VPS）
+# 节点：sg-ubuntu（Altare）
 # 规则：国外走代理，国内直连，广告拦截；模式可在 FlClash 里切换（规则/全局/直连）
 
 port: 7890
@@ -20,12 +20,6 @@ dns:
     - 1.1.1.1
 
 proxies:
-  - name: 野草云
-    type: vless
-    server: 187.53.82.202
-    port: 8443
-    uuid: bb661ede-3c8a-4034-ac59-8216d0acfcd2
-    udp: true
   - name: sg-ubuntu
     type: vless
     server: sg-sgp03.altare.global
@@ -37,13 +31,11 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - 野草云
       - sg-ubuntu
       - DIRECT
   - name: GLOBAL
     type: select
     proxies:
-      - 野草云
       - sg-ubuntu
       - DIRECT
 
