@@ -23,7 +23,7 @@ proxies:
   - name: 野草云
     type: vless
     server: 187.53.82.202
-    port: 443
+    port: 8443
     uuid: bb661ede-3c8a-4034-ac59-8216d0acfcd2
     udp: true
   - name: sg-ubuntu
